@@ -37,4 +37,11 @@ while (period_time < period and period > 0) or (amount_saved < goal and goal > 0
     amount_saved += currnt_save
 
     print(f" {frequencies[0]} {period_time}: Save ${currnt_save} (Total = {amount_saved})")
+    
+    if goal > 0 and amount_saved >= goal:
+        print(f"Yayyy!! You reached your goal: ${amount_saved}")
+        break
+
     currnt_save += 1
+
+print(f"Yayyy!! You reached your saving period, you saved ${amount_saved}")
